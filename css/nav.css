@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#trigger {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+  background-color: rgba(41, 128, 185, 1.0);
+  position: fixed;
+  margin-left: -200px;
+  transition: all 300ms;
+  z-index: 2;
+}
+
+.navigation nav ul {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.navigation nav ul li {
+  padding-bottom: 15px;
+}
+
+.navigation nav ul li a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 300ms;
+  font-size: 20px;
+}
+
+.navigation nav ul li a:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+label {
+  margin-left: 220px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+#trigger[type=checkbox]:checked + .navigation {
+  margin-left: 0px;
+}
